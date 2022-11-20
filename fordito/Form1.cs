@@ -24,6 +24,8 @@ namespace fordito
         int maxHeight = 0;
         Graphics g;
         const string START_SIGN = "E#";
+
+        const string EPSILON = "e";
         bool draw = false;
 
         public Form1()
@@ -273,6 +275,7 @@ namespace fordito
             {
                 return;
             }
+            
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -286,7 +289,11 @@ namespace fordito
                     value = word[i].ToString();
                 }
 
-                if (node.left == null)
+                if (word == EPSILON)
+                {
+                    node.left = new TreeNode(word, node);
+                }
+                else   if (node.left == null)
                 {
                     node.left = new TreeNode(value, node);
                     buildTree(node.left, height + 1);
@@ -302,6 +309,7 @@ namespace fordito
                     buildTree(node.right, height + 1);
                 }
             }
+                
 
         }
 
@@ -327,13 +335,21 @@ namespace fordito
 
             if (point.X != 0 && point.Y != 0)
             {
-                g.DrawLine(new Pen(Color.Black), point, new PointF(x, y));
+                g.DrawLine(new Pen(Color.Black), new PointF(point.X+4, point.Y+4), new PointF(x+4, y+4));
                 g.DrawEllipse(new Pen(Color.Black), point.X - 2, point.Y - 2, 12, 12);
                 g.FillEllipse(new SolidBrush(Color.White), point.X - 2, point.Y - 2, 12, 12);
                 g.DrawString(node.parent.value, new Font("Arial", 6), Brushes.Black, point);
             }
 
             g.DrawEllipse(new Pen(Color.Black), x - 2, y - 2, 12, 12);
+            if(node.value == EPSILON)
+            {
+                g.FillEllipse(new SolidBrush(Color.White), x - 2, y - 2, 12, 12);
+            }
+            else
+            {
+                g.FillEllipse(new SolidBrush(Color.LightGreen), x - 2, y - 2, 12, 12);
+            }
             g.DrawString(node.value, new Font("Arial", 6), Brushes.Black, new PointF(x, y));
 
 

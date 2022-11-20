@@ -10,3 +10,15 @@ C:\Users\intel\source\repos\fordito\fordito\obj\Debug\fordito.csproj.CoreCompile
 C:\Users\intel\source\repos\fordito\fordito\obj\Debug\fordito.exe
 C:\Users\intel\source\repos\fordito\fordito\obj\Debug\fordito.pdb
 C:\Users\intel\source\repos\fordito\fordito\obj\Debug\fordito.csproj.ResolveComReference.cache
+D:\GIT\fordito\fordito\bin\Debug\fordito.exe.config
+D:\GIT\fordito\fordito\bin\Debug\fordito.exe
+D:\GIT\fordito\fordito\bin\Debug\fordito.pdb
+D:\GIT\fordito\fordito\obj\Debug\fordito.csproj.AssemblyReference.cache
+D:\GIT\fordito\fordito\obj\Debug\fordito.csproj.SuggestedBindingRedirects.cache
+D:\GIT\fordito\fordito\obj\Debug\fordito.csproj.ResolveComReference.cache
+D:\GIT\fordito\fordito\obj\Debug\fordito.Form1.resources
+D:\GIT\fordito\fordito\obj\Debug\fordito.Properties.Resources.resources
+D:\GIT\fordito\fordito\obj\Debug\fordito.csproj.GenerateResource.cache
+D:\GIT\fordito\fordito\obj\Debug\fordito.csproj.CoreCompileInputs.cache
+D:\GIT\fordito\fordito\obj\Debug\fordito.exe
+D:\GIT\fordito\fordito\obj\Debug\fordito.pdb
