@@ -25,13 +25,14 @@ namespace fordito
         Graphics g;
         const string START_SIGN = "E#";
 
-        const string EPSILON = "e";
+        string EPSILON;
         bool draw = false;
 
         public Form1()
         {
             InitializeComponent();
             listBox1.Items.Clear();
+            EPSILON = textBox4.Text;
         }
 
         private string converter(string input)
@@ -111,6 +112,7 @@ namespace fordito
             input = textBox2.Text;
             stack = "E#";
             rules = "";
+            EPSILON = textBox4.Text;
             list = new List<string>();
             tree = new TreeNode(stack[0].ToString(), null);
             solver();
@@ -243,9 +245,8 @@ namespace fordito
             {
                 stack = stack.Substring(1);
             }
-            if (step[0] == "e")
+            if (step[0] == EPSILON)
             {
-                //stack = step[0] + stack;  //ha "e" epszilon, akkor ez a sor nem kell
                 rules = rules + step[1];
             }
             else if (step[0].ToLower() == "pop")
@@ -320,7 +321,6 @@ namespace fordito
             if (draw)
             {
                 drawGraph(g, tree, 1, 1, 1, new PointF(0, 0));
-                MessageBox.Show("rajz");
                 draw = false;
             }
         }
@@ -344,7 +344,7 @@ namespace fordito
             g.DrawEllipse(new Pen(Color.Black), x - 2, y - 2, 12, 12);
             if(node.value == EPSILON)
             {
-                g.FillEllipse(new SolidBrush(Color.White), x - 2, y - 2, 12, 12);
+                g.FillEllipse(new SolidBrush(Color.LightGray), x - 2, y - 2, 12, 12);
             }
             else
             {
