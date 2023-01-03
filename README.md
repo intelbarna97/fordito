@@ -26,7 +26,8 @@
 
 - **Epszilon**
   - Van egy üres string, ezt meg lehet adni az epszilon mezőben. 
-    Alapértelmezetten: e
+  
+          Alapértelmezetten: e
 
 - **Lista**
     - A lista a program lépéseit tartalmazza egy rendezett hármasban:
