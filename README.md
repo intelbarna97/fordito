@@ -20,16 +20,16 @@
   
 - **Input**
   - Szükség van egy bemenetre, amit a program átalakít a megfelelő alakra.
-    Pl.: 
-      bemenet:                ( 3 * 3 ) + 2
-      átalakított bemenet:    ( i + i ) * i 
+          Pl.: 
+          bemenet:                ( 3 * 3 ) + 2
+          átalakított bemenet:    ( i + i ) * i 
 
 - **Epszilon**
   - Van egy üres string, ezt meg lehet adni az epszilon mezőben. 
     Alapértelmezetten: e
 
 - **Lista**
-    - A lista a program lépéseit tartalmazza egy rendezett hármasban.
+    - A lista a program lépéseit tartalmazza egy rendezett hármasban:
        - az első elem az aktuális input szalag maradék része
        - a középső elem a verem aktuális tartalma
        - a jobboldali elem pedig az eddig alkalmazott szabályok sorozata
