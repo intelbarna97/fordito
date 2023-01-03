@@ -21,7 +21,6 @@
 - **Input**
   - Szükség van egy bemenetre, amit a program átalakít a megfelelő alakra.
   
-          Pl.: 
           bemenet:                ( 3 * 3 ) + 2
           átalakított bemenet:    ( i + i ) * i 
 
