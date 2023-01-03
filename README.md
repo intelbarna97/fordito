@@ -7,14 +7,14 @@
 
   - A program a következő nyelvtan alapján van megírva:
   
-      G = ({E, E’, T, T’, F}, {+, *, (, ), i}, P, E)
+        G = ({E, E’, T, T’, F}, {+, *, (, ), i}, P, E)
 
-      S -> E#
-      E -> TE’
-      E’ -> +TE’ | e
-      T -> FT’
-      T’ -> *FT’ | e
-      F -> (E) | i
+        S -> E#
+        E -> TE’
+        E’ -> +TE’ | e
+        T -> FT’
+        T’ -> *FT’ | e
+        F -> (E) | i
 
   - Ezt a táblázatot módosítani és menteni(felülírja az eredetit) is lehet a program segítségével.
   
