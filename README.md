@@ -29,10 +29,10 @@
     Alapértelmezetten: e
 
 - **Lista**
- - A lista a program lépéseit tartalmazza egy rendezett hármasban.
-   - az első elem az aktuális input szalag maradék része
-   - a középső elem a verem aktuális tartalma
-   - a jobboldali elem pedig az eddig alkalmazott szabályok sorozata
+    - A lista a program lépéseit tartalmazza egy rendezett hármasban.
+       - az első elem az aktuális input szalag maradék része
+       - a középső elem a verem aktuális tartalma
+       - a jobboldali elem pedig az eddig alkalmazott szabályok sorozata
 
 - **Szintaxisfa**
    - Ha az algoritmus végigért akkor a program felépít egy fát a lépések alapján, majd ezt kirajzolja a canvasre.
