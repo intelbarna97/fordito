@@ -50,7 +50,7 @@ namespace fordito
 
         private void button2_Click(object sender, EventArgs e)
         {
-            input = textBox2.Text;
+            input = converter(textBox2.Text);
             stack = START_SIGN;
             rules = "";
         }
@@ -236,7 +236,10 @@ namespace fordito
 
         private void calculateStep(int x, int y)
         {
-            string[] step = Regex.Replace(data[x, y], @"[()\s]", "").Split(',');
+            string temp = Regex.Replace(data[x, y], @"^[(]", "");
+            temp = Regex.Replace(temp, @"[)]$", "");
+            temp = Regex.Replace(temp, @"[\s]", "");
+            string[] step = temp.Split(',');
             if (stack[1].ToString() == "'")
             {
                 stack = stack.Substring(2);
